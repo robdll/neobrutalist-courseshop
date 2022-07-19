@@ -1,0 +1,27 @@
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 25px 25px;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.avatar {
+  grid-row: 1 / -1;
+  border: 1px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.welcome {
+  color: #323131;
+  font-size: 0.6rem;
+  align-self: flex-end;
+}
+
+.hint {
+  grid-row: 2;
+  font-weight: 500;
+  font-size: 0.8rem;
+  align-self: flex-end;
+}
