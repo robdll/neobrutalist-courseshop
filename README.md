@@ -1,6 +1,8 @@
 # neobrutalist Courseshop
 
-It's a video course shop proof of concept featuring neobrutalism based on [kiishioflag\_](https://twitter.com/kiishioflag_) design
+It's a video course shop proof of concept featuring neobrutalism based on [kiishioflag\_](https://twitter.com/kiishioflag_) design.
+
+[Demo here](https://robertodilillo.dev/neobrutalist-courseshop/)
 
 ## Prerequisites
 
@@ -20,6 +22,6 @@ It's a video course shop proof of concept featuring neobrutalism based on [kiish
 
 3. Run the project
 
-> yarn start
+> yarn dev
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
