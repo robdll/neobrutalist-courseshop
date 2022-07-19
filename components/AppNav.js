@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styles from "../styles/Navbar.module.scss";
 import Image from "next/image";
 
