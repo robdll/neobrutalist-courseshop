@@ -1,17 +1,17 @@
 .container {
-  background-color: #fefced;
   height: 100vh;
   display: flex;
   place-content: center;
 }
 
 .main {
-  min-height: 100vh;
   max-width: 375px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 42px 25px;
+  padding: 42px 25px;
+  margin-top: 30px;
+  background-color: #fefced;
 }
