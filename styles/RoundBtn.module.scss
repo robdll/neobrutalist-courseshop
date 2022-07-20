@@ -1,9 +1,25 @@
 .circle {
   width: 30px;
   height: 30px;
-  background-color: #b7d832;
+  background-color: var(--color-green);
   display: flex;
+  align-items: center;
   place-content: center;
   border-radius: 50%;
-  border: 2px solid #000;
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+}
+
+.bordered {
+  box-shadow: 2px 2px 0px var(--color-black);
+}
+
+.circle:hover {
+  background-color: var(--color-lightgreen);
+}
+
+.circle.bordered:active {
+  background-color: var(--color-lightgreen);
+  transform: translate(2px, 2px);
+  box-shadow: none;
 }
