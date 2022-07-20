@@ -1,0 +1,23 @@
+.inputContainer {
+  padding: 10px 15px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 2px 2px 0px var(--color-black);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+  font-size: 0.8em;
+  font-style: italic;
+  letter-spacing: 1px;
+  flex: 1;
+}
