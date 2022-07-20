@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.scss";
 import Seo from "../components/Seo";
 import AppNav from "../components/AppNav";
 import AppSearch from "../components/AppSearch";
-// import Categories from "../components/Categories";
+import Categories from "../components/Categories";
 // import Featured from "../components/Featured";
 // import Releases from "../components/Releases";
 
@@ -13,8 +13,8 @@ export default function Home() {
       <main className={styles.main}>
         <AppNav />
         <AppSearch />
-        {/* 
         <Categories />
+        {/* 
         <Featured />
         <Releases /> 
         */}
