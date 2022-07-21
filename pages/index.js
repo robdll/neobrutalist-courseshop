@@ -3,7 +3,7 @@ import Seo from "../components/Seo";
 import AppNav from "../components/AppNav";
 import AppSearch from "../components/AppSearch";
 import Categories from "../components/Categories";
-// import Featured from "../components/Featured";
+import Featured from "../components/Featured";
 // import Releases from "../components/Releases";
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
         <AppSearch />
         <Categories />
         <span className={styles.featuredTitle}>Best-Selling of the week</span>
-        {/* 
         <Featured />
+        {/* 
         <Releases /> 
         */}
       </main>
