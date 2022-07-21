@@ -14,9 +14,14 @@ export default function Home() {
         <AppNav />
         <AppSearch />
         <Categories />
-        <span className={styles.featuredTitle}>Best-Selling of the week</span>
+        <span className={styles.sectionTitle}>Best-Selling of the week</span>
         <Featured />
+        <div className={styles.releasesHeader}>
+          <span className={styles.sectionTitle}>New Releases</span>
+          <span className={styles.link}>See All</span>
+        </div>
         {/* 
+        
         <Releases /> 
         */}
       </main>

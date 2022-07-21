@@ -12,7 +12,6 @@ export default function Featured() {
       <article className={styles.infoBox}>
         <span className={styles.infoTitle}>Development 0 to Hero</span>
         <span className={styles.avatar}></span>
-
         <span className={styles.infoAuthor}>Rob.dll</span>
         <span className={styles.infoPrice}>$50.50</span>
       </article>
