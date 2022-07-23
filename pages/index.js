@@ -24,11 +24,19 @@ export default function Home() {
 
   const [courses, setCourses] = useState([...releases]);
 
-  const filterCourses = (type) => {
+  const filterByType = (type) => {
     let filtered = [...releases];
     if (type !== "All") {
       filtered = releases.filter((course) => course.category === type);
     }
+    setCourses(filtered);
+  };
+
+  const filterByTitle = (title) => {
+    title = title.toLowerCase();
+    let filtered = [...releases].filter(
+      (course) => course.title.toLowerCase().indexOf(title) > -1
+    );
     setCourses(filtered);
   };
 
@@ -37,8 +45,8 @@ export default function Home() {
       <Seo />
       <main className={styles.main}>
         <AppNav />
-        <AppSearch />
-        <Categories filterCb={(type) => filterCourses(type)} />
+        <AppSearch filterCb={(type) => filterByTitle(type)} />
+        <Categories filterCb={(type) => filterByType(type)} />
         <span className={styles.sectionTitle}>Best-Selling of the week</span>
         <Featured />
         <div className={styles.releasesHeader}>
