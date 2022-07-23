@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Featured() {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <span className={styles.likeBtn}>
         <RoundBtn icon="/heart.svg"></RoundBtn>
       </span>
@@ -15,6 +15,6 @@ export default function Featured() {
         <span className={styles.infoAuthor}>Rob.dll</span>
         <span className={styles.infoPrice}>$50.50</span>
       </article>
-    </div>
+    </article>
   );
 }

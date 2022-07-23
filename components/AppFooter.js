@@ -17,7 +17,7 @@ export default function AppFooter() {
         const isActive = activeTab === item.name;
         if (isActive) {
           return (
-            <div className={styles.activeTab}>
+            <div key={idx} className={styles.activeTab}>
               <Image
                 src={item.icon}
                 alt="section icon"
