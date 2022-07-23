@@ -36,14 +36,17 @@
 .goBack {
   transform: rotate(180deg);
   cursor: pointer;
+  display: flex;
 }
 
 .titlePage {
   font-weight: 500;
   font-size: 0.7rem;
   flex: 1;
-  text-align: center;
   line-height: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 800px) {

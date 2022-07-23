@@ -47,7 +47,7 @@ export default function Home() {
       <main className={styles.main}>
         <AppSearch filterCb={(type) => filterByTitle(type)} />
         <Categories filterCb={(type) => filterByType(type)} />
-        <span className={styles.sectionTitle}>Best-Selling of the week</span>
+        <div className={styles.sectionTitle}>Best-Selling of the week</div>
         <Featured />
         <div className={styles.releasesHeader}>
           <span className={styles.sectionTitle}>New Releases</span>
