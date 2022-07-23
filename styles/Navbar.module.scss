@@ -49,5 +49,7 @@
 @media screen and (min-width: 800px) {
   .nav {
     width: var(--width-limit);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
