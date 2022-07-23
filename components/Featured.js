@@ -1,10 +1,17 @@
 import styles from "../styles/Featured.module.scss";
 import RoundBtn from "./RoundBtn";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Featured() {
+  const handleEvent = (event) => {
+    if (event.type === "touchend") {
+      console.log("redirect");
+    }
+  };
+
   return (
-    <article className={styles.container}>
+    <article className={styles.container} onTouchEnd={handleEvent}>
       <span className={styles.likeBtn}>
         <RoundBtn icon="/heart.svg"></RoundBtn>
       </span>

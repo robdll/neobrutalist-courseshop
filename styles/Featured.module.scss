@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+.container:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
 .likeBtn {
   align-self: flex-end;
   margin: 10px;
