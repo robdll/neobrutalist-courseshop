@@ -1,7 +1,7 @@
 import styles from "../styles/Categories.module.scss";
 import { useState } from "react";
 
-export default function Categories() {
+export default function Categories({ filterCb }) {
   const [activeTab, setActiveTab] = useState("All");
 
   const categories = [
@@ -15,6 +15,8 @@ export default function Categories() {
 
   function handleClick(category) {
     setActiveTab(category);
+    filterCb(category);
+    console.log("category");
   }
 
   return (
