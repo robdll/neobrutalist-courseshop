@@ -7,9 +7,9 @@ export default function AppFooter() {
 
   const sections = [
     { name: "Home", icon: "/home.svg" },
-    { name: "Book", icon: "/book.svg" },
+    { name: "Learn", icon: "/book.svg" },
     { name: "Cart", icon: "/cart.svg" },
-    { name: "Favs", icon: "/heart.svg" },
+    { name: "Saved", icon: "/heart.svg" },
   ];
   return (
     <footer className={styles.footer}>
