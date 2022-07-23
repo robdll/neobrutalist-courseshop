@@ -1,0 +1,53 @@
+.card {
+  width: 100%;
+  box-shadow: 4px 4px 0px var(--color-violet);
+  background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 90px 1fr 70px;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 10px;
+  border: 2px solid var(--color-violet);
+  margin-bottom: 15px;
+  min-height: 85px;
+  overflow: hidden;
+  column-gap: 3px;
+  cursor: pointer;
+}
+
+.card:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.overviewContainer {
+  border: 2px solid var(--color-black);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 11px 8px;
+  background-image: url("https://picsum.photos/200");
+  grid-row: 1 / -1;
+}
+
+.title {
+  align-self: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.price {
+  align-self: flex-start;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-violet);
+  margin-top: -2px;
+}
+
+.arrowBtn {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+  background-color: var(--color-green);
+}

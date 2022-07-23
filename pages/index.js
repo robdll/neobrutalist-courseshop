@@ -4,9 +4,13 @@ import AppNav from "../components/AppNav";
 import AppSearch from "../components/AppSearch";
 import Categories from "../components/Categories";
 import Featured from "../components/Featured";
-// import Releases from "../components/Releases";
+import Release from "../components/Release";
 
 export default function Home() {
+  const releases = [
+    { title: "UX Foundation", price: "$61.45" },
+    { title: "UX Foundation", price: "$61.45" },
+  ];
   return (
     <div className={styles.container}>
       <Seo />
@@ -20,10 +24,13 @@ export default function Home() {
           <span className={styles.sectionTitle}>New Releases</span>
           <span className={styles.link}>See All</span>
         </div>
-        {/* 
-        
-        <Releases /> 
-        */}
+        <section className={styles.releases}>
+          {releases.map((release, idx) => {
+            return (
+              <Release key={idx} title={release.title} price={release.price} />
+            );
+          })}
+        </section>
       </main>
       {/* 
         <AppFooter /> 
