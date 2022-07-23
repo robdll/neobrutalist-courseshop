@@ -45,3 +45,9 @@
   text-align: center;
   line-height: 2;
 }
+
+@media screen and (min-width: 800px) {
+  .nav {
+    width: var(--width-limit);
+  }
+}
