@@ -8,6 +8,48 @@
   background-color: var(--color-pink);
 }
 
+.footerWhite {
+  background-color: var(--color-white);
+  padding: 10px 30px;
+  .price {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: var(--color-violet);
+    margin: 15px 0;
+  }
+  .buyBtn {
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    box-shadow: 8px 8px 0px var(--color-black);
+    overflow: hidden;
+    background-color: var(--color-violet);
+    display: flex;
+    align-items: center;
+    .buy {
+      color: var(--color-white);
+      font-size: 1rem;
+      line-height: 21px;
+      letter-spacing: 1px;
+      color: var(--color-white);
+      margin: 15px 20px;
+    }
+    .buyArrow {
+      align-self: stretch;
+      background-color: var(--color-green);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+    }
+  }
+  .buyBtn:active {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+  }
+}
+
 .activeTab {
   background-color: var(--color-green);
   font-size: 0.5rem;

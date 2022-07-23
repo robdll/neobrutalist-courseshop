@@ -7,20 +7,12 @@ import AppFooter from "@components/AppFooter";
 import { useState } from "react";
 
 export default function Details() {
-  const releases = [
-    { title: "UX Foundation", price: "$59.99", category: "Design" },
-    { title: "Science of Color", price: "$24.99", category: "Design" },
-    { title: "Web Development", price: "$99.99", category: "Development" },
-    { title: "React Advanced", price: "$99.99", category: "Development" },
-    { title: "Marketing Easy", price: "$19.99", category: "Marketing" },
-    { title: "Seo for dummy", price: "$14.99", category: "Marketing" },
-    { title: "Canon Vs Nikon", price: "$9.99", category: "Photography" },
-    { title: "Lights and Frame", price: "$9.99", category: "Photography" },
-    { title: "Storylogue Techniques", price: "$24.99", category: "Writing" },
-    { title: "Self-Publishing Tips", price: "$9.99", category: "Writing" },
+  const lessons = [
+    { title: "Intro to Html", price: "159min 22sec" },
+    { title: "Basic CSS", price: "24min 45sec" },
+    { title: "Javascript Foundamental", price: "59min 18sec" },
+    { title: "Creating a website", price: "25min 12sec" },
   ];
-
-  const [courses, setCourses] = useState([...releases]);
 
   return (
     <div className={styles.container}>
@@ -29,18 +21,28 @@ export default function Details() {
         <AppNav isDetails={true} />
         <Featured isDetails={true} />
         <div className={styles.releasesHeader}>
-          <span className={styles.sectionTitle}>New Releases</span>
-          <span className={styles.link}>See All</span>
+          <span className={styles.sectionTitle}>
+            Learn Development with Rob.dll
+          </span>
         </div>
+        <p className={styles.courseDescription}>
+          This Course is beginner friendly and teach you all you need to become
+          a full stack developer in no time.....<span>Read More</span>
+        </p>
         <section className={styles.releases}>
-          {courses.map((release, idx) => {
+          {lessons.map((lesson, idx) => {
             return (
-              <Release key={idx} title={release.title} price={release.price} />
+              <Release
+                key={idx}
+                title={lesson.title}
+                price={lesson.price}
+                isLesson={true}
+              />
             );
           })}
         </section>
       </main>
-      <AppFooter />
+      <AppFooter isDetails={true} />
     </div>
   );
 }
