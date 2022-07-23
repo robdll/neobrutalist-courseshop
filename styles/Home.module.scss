@@ -4,12 +4,13 @@
   place-content: center;
   flex-direction: column;
   overflow-x: hidden;
+  background-color: var(--color-pink);
+  align-items: center;
 }
 
 .main {
   flex: 1;
   padding: 0 25px 0 25px;
-  background-color: var(--color-pink);
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -58,4 +59,14 @@
   span {
     color: var(--color-violet);
   }
+}
+
+.container {
+  .main {
+    max-width: var(--width-max);
+  }
+}
+
+.main::-webkit-scrollbar {
+  display: none;
 }
