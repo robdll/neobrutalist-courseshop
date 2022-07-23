@@ -1,4 +1,4 @@
-import styles from "../styles/Categories.module.scss";
+import styles from "@styles/Categories.module.scss";
 import { useState } from "react";
 
 export default function Categories({ filterCb }) {

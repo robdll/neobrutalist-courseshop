@@ -1,7 +1,7 @@
-import styles from "../styles/Navbar.module.scss";
+import styles from "@styles/Navbar.module.scss";
 import Image from "next/image";
 
-import RoundBtn from "../components/RoundBtn";
+import RoundBtn from "@components/RoundBtn";
 
 export default function AppNav({ name = "Rob.dll" }) {
   return (

@@ -8,7 +8,7 @@ import Release from "@components/Release";
 import AppFooter from "@components/AppFooter";
 import { useState } from "react";
 
-export default function Home() {
+export default function Details() {
   const releases = [
     { title: "UX Foundation", price: "$59.99", category: "Design" },
     { title: "Science of Color", price: "$24.99", category: "Design" },

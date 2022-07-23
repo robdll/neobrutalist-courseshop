@@ -1,5 +1,5 @@
-import styles from "../styles/Search.module.scss";
-import RoundBtn from "../components/RoundBtn";
+import styles from "@styles/Search.module.scss";
+import RoundBtn from "@components/RoundBtn";
 import { useState } from "react";
 
 export default function AppSearch({ filterCb }) {

@@ -1,4 +1,4 @@
-import styles from "../styles/Featured.module.scss";
+import styles from "@styles/Featured.module.scss";
 import RoundBtn from "./RoundBtn";
 import Image from "next/image";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/RoundBtn.module.scss";
+import styles from "@styles/RoundBtn.module.scss";
 
 export default function RoundBtn({ icon, bordered }) {
   const className = `${styles.circle} ${bordered ? styles.bordered : ""}`;
