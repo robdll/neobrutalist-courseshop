@@ -16,7 +16,6 @@ export default function Categories({ filterCb }) {
   function handleClick(category) {
     setActiveTab(category);
     filterCb(category);
-    console.log("category");
   }
 
   return (

@@ -3,7 +3,6 @@ import styles from "../styles/Release.module.scss";
 
 export default function Release({ title, price }) {
   const num = Math.floor(75 + Math.random() * (100 - 75 + 1));
-  console.log(num);
   return (
     <article className={styles.card}>
       <span
