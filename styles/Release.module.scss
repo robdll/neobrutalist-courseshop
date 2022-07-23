@@ -1,6 +1,6 @@
 .card {
-  width: 100%;
-  box-shadow: 4px 4px 0px var(--color-violet);
+  width: calc(100% - 8px);
+  box-shadow: 8px 8px 0px var(--color-violet);
   background-color: var(--color-white);
   display: grid;
   grid-template-columns: 90px 1fr 70px;
