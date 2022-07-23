@@ -1,8 +1,6 @@
 import styles from "@styles/Home.module.scss";
 import Seo from "@components/Seo";
 import AppNav from "@components/AppNav";
-import AppSearch from "@components/AppSearch";
-import Categories from "@components/Categories";
 import Featured from "@components/Featured";
 import Release from "@components/Release";
 import AppFooter from "@components/AppFooter";
@@ -24,30 +22,11 @@ export default function Details() {
 
   const [courses, setCourses] = useState([...releases]);
 
-  const filterByType = (type) => {
-    let filtered = [...releases];
-    if (type !== "All") {
-      filtered = releases.filter((course) => course.category === type);
-    }
-    setCourses(filtered);
-  };
-
-  const filterByTitle = (title) => {
-    title = title.toLowerCase();
-    let filtered = [...releases].filter(
-      (course) => course.title.toLowerCase().indexOf(title) > -1
-    );
-    setCourses(filtered);
-  };
-
   return (
     <div className={styles.container}>
       <Seo />
       <main className={styles.main}>
-        <AppNav />
-        <AppSearch filterCb={(type) => filterByTitle(type)} />
-        <Categories filterCb={(type) => filterByType(type)} />
-        <span className={styles.sectionTitle}>Best-Selling of the week</span>
+        <AppNav isDetails={true} />
         <Featured />
         <div className={styles.releasesHeader}>
           <span className={styles.sectionTitle}>New Releases</span>

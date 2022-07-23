@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+.nav.detail {
+  display: flex;
+  flex-direction: row;
+}
+
 .avatar {
   grid-row: 1 / -1;
   border: 1px solid #000;
@@ -24,4 +29,16 @@
   font-weight: 500;
   font-size: 0.7rem;
   align-self: flex-end;
+}
+
+.goBack {
+  transform: rotate(180deg);
+}
+
+.titlePage {
+  font-weight: 500;
+  font-size: 0.7rem;
+  flex: 1;
+  text-align: center;
+  line-height: 2;
 }
