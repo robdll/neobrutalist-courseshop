@@ -5,6 +5,7 @@ import AppSearch from "../components/AppSearch";
 import Categories from "../components/Categories";
 import Featured from "../components/Featured";
 import Release from "../components/Release";
+import AppFooter from "../components/AppFooter";
 
 export default function Home() {
   const releases = [
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Seo />
-      <main className={styles.main}>
+      <div className={styles.main}>
         <AppNav />
         <AppSearch />
         <Categories />
@@ -31,10 +32,8 @@ export default function Home() {
             );
           })}
         </section>
-      </main>
-      {/* 
-        <AppFooter /> 
-      */}
+        <AppFooter />
+      </div>
     </div>
   );
 }
