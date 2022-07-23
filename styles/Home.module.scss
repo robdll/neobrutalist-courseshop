@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   place-content: center;
   flex-direction: column;
@@ -7,9 +7,8 @@
 }
 
 .main {
-  max-width: 400px;
   flex: 1;
-  padding: 42px 25px 0 25px;
+  padding: 0 25px 0 25px;
   background-color: var(--color-pink);
   overflow-x: hidden;
   overflow-y: scroll;

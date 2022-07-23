@@ -1,9 +1,11 @@
 .nav {
   display: grid;
+  padding: 42px 25px 25px;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 25px 25px;
   column-gap: 10px;
   width: 100%;
+  background-color: var(--color-pink);
 }
 
 .nav.detail {

@@ -17,8 +17,8 @@ export default function Details() {
   return (
     <div className={styles.container}>
       <Seo />
+      <AppNav isDetails={true} />
       <main className={styles.main}>
-        <AppNav isDetails={true} />
         <Featured isDetails={true} />
         <div className={styles.releasesHeader}>
           <span className={styles.sectionTitle}>

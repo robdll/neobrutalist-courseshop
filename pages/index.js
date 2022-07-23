@@ -43,8 +43,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Seo />
+      <AppNav />
       <main className={styles.main}>
-        <AppNav />
         <AppSearch filterCb={(type) => filterByTitle(type)} />
         <Categories filterCb={(type) => filterByType(type)} />
         <span className={styles.sectionTitle}>Best-Selling of the week</span>
