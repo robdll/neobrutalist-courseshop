@@ -27,7 +27,7 @@ export default function Details() {
       <Seo />
       <main className={styles.main}>
         <AppNav isDetails={true} />
-        <Featured />
+        <Featured isDetails={true} />
         <div className={styles.releasesHeader}>
           <span className={styles.sectionTitle}>New Releases</span>
           <span className={styles.link}>See All</span>

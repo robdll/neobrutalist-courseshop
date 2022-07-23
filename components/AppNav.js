@@ -2,9 +2,13 @@ import styles from "@styles/Navbar.module.scss";
 import Image from "next/image";
 
 import RoundBtn from "@components/RoundBtn";
-
+import { useRouter } from "next/router";
 export default function AppNav({ name = "Rob.dll", isDetails = false }) {
+  const router = useRouter();
   const icon = isDetails ? "heart" : "bell";
+  const handleGoBack = () => {
+    router.back();
+  };
   return (
     <nav
       className={
@@ -12,7 +16,7 @@ export default function AppNav({ name = "Rob.dll", isDetails = false }) {
       }
     >
       {isDetails ? (
-        <span className={styles.goBack}>
+        <span className={styles.goBack} onClick={handleGoBack}>
           <Image src={"/rightArrow.svg"} alt="avatar" width="25" height="25" />
         </span>
       ) : (
