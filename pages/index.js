@@ -9,13 +9,13 @@ import AppFooter from "../components/AppFooter";
 
 export default function Home() {
   const releases = [
-    { title: "UX Foundation", price: "$61.45" },
-    { title: "UX Foundation", price: "$61.45" },
+    { title: "UX Foundation", price: "$59.99" },
+    { title: "Science of Color", price: "$24.99" },
   ];
   return (
     <div className={styles.container}>
       <Seo />
-      <div className={styles.main}>
+      <main className={styles.main}>
         <AppNav />
         <AppSearch />
         <Categories />
@@ -32,8 +32,8 @@ export default function Home() {
             );
           })}
         </section>
-        <AppFooter />
-      </div>
+      </main>
+      <AppFooter />
     </div>
   );
 }
