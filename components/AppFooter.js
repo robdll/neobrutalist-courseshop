@@ -29,7 +29,7 @@ export default function AppFooter({ isDetails }) {
     if (isActive) {
       return (
         <div key={idx} className={styles.activeTab}>
-          <Image src={item.icon} alt="section icon" width="20" height="20" />
+          <Image src={item.icon} alt="section icon" width="25" height="25" />
           <span className={styles.name}>{item.name}</span>
         </div>
       );
@@ -40,7 +40,7 @@ export default function AppFooter({ isDetails }) {
           className={styles.icon}
           onClick={() => setActiveTab(item.name)}
         >
-          <Image src={item.icon} alt="section icon" width="20" height="20" />
+          <Image src={item.icon} alt="section icon" width="25" height="25" />
         </div>
       );
     }
